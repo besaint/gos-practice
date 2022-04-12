@@ -1,0 +1,14 @@
+{
+    "name": "c",
+    "collaborators": [
+      "zernov.va <zernov.va@scratch.studio>"
+    ],
+    "version": "0.1.0",
+    "files": [
+      "main.wasm",
+      "c.js",
+      "main.js"
+    ],
+    "module": "c.js",
+    "sideEffects": false
+  }

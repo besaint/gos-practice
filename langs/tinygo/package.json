@@ -1,0 +1,14 @@
+{
+    "name": "tinygo",
+    "collaborators": [
+      "zernov.va <zernov.va@scratch.studio>"
+    ],
+    "version": "0.1.0",
+    "files": [
+      "main.wasm",
+      "tinygo.js",
+      "wasm_exec.js"
+    ],
+    "module": "tinygo.js",
+    "sideEffects": false
+  }

@@ -1,0 +1,14 @@
+{
+    "name": "go",
+    "collaborators": [
+      "zernov.va <zernov.va@scratch.studio>"
+    ],
+    "version": "0.1.0",
+    "files": [
+      "main.wasm",
+      "go.js",
+      "wasm_exec.js"
+    ],
+    "module": "go.js",
+    "sideEffects": false
+  }

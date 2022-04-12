@@ -1,0 +1,69 @@
+<html>
+	<head>
+		<meta charset="utf-8"/>
+        <link rel="icon" href="/assets/webassembly_logo_icon_170218.ico" type="image/x-icon"/>
+        <link rel="shortcut icon" href="/assets/webassembly_logo_icon_170218.ico" type="image/x-icon"/>
+        <title>WebAssembly + ITMO = &#9829;</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <link rel="stylesheet" href="/fonts/stylesheet.css">
+        <link rel="stylesheet" href="./main.css">
+
+        <script src='/langs/c/main.js'></script>
+        <script src='/langs/go/wasm_exec.js'></script>
+        <script src='/langs/tinygo/wasm_exec.js'></script>
+	</head>
+	<body>
+        <div class="container-fluid test-page">
+            <header>
+                <img class="logo" src="/assets/logo-horizontal-inverted.png">
+    
+                <a class="wasm" href="/">
+                    <img class="wasm-logo" src="/assets/webassembly_logo_icon_170218.png">
+                    <div class="wasm-text">
+                        benchmark
+                        <span>by Zernov Viktor</span>
+                    </div>
+                </a>
+
+                <div class="mock">
+                    <div data-toggle="tooltip" data-placement="bottom" title="Number of test cycles">
+                        <input class="form-control-sm" id="cookie-cycles" type="number" min="1" max="10000" value="10"/>
+                    </div>
+                </div>
+            </header>
+
+            <section class="container py-3 base">
+                <div class="header">
+                    <h3>Multiply Int</h3>
+
+                    <input class="form-control-sm" name="0" id="first" type="number" style="width: 140px;" placeholder="Int number"/>
+                    <input class="form-control-sm" name="0" id="second" type="number" style="width: 140px;"  placeholder="Int number"/>
+                    <input class="form-control-sm" name="0" id="count" min="1" type="number" style="width: 90px;"  placeholder="N times"/>
+                    <button class="btn btn-link btn-sm" id="multiply_int_run"><i class="fas fa-play"></i></button>
+                    <label id="status"></label>
+                </div>
+
+                <div id="results" class="mt-5">
+                    <div class="empty">
+                        There are no test results yet. <br>
+                        Specify the function argument and start testing.
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="gotop">
+            <i class="fas fa-arrow-up"></i>
+        </div>
+
+        <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+        <script src="./bootstrap.js"></script>
+        <script src="https://kit.fontawesome.com/ea64a5ce07.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+	</body>
+</html>
